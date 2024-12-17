@@ -1,9 +1,10 @@
 #Site https://citate.top/celebre/agatha-christie/
-import requests #am instalat in terminal pip install requests beautifulsoup4
-from bs4 import BeautifulSoup
-import tkinter as tk
-from tkinter import messagebox
-import random
+#am instalat in terminal pip install requests beautifulsoup4
+import requests  #o bibliotecă care permite trimiterea de cereri HTTP pentru a obține conținutul paginilor web.
+from bs4 import BeautifulSoup #o bibliotecă care analizează paginile HTML pentru a extrage date
+import tkinter as tk #crearea de interfețe grafice (ferestre).
+from tkinter import messagebox #o componentă din tkinter pentru a afișa ferestre de dialog cu mesaje.
+import random #pentru alegerea aleatoare a unui citat
 
 
 # Funcție pentru a prelua citate

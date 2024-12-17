@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a4c4803-fffc-448d-a1aa-8ca139181b60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Curs/Tema_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs/Tema_curs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_1/Calculdobanda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_1/Check_nrprim.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_1/Convert_C-F.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_1/OddvsEven.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_2/1_gradingsystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_2/2_Multiple_finder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_2/3.Number_guessing_game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_2/4.Palindrome_checker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_3/Calcul-factorial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_3/Count-Occurrence-of-word-in-sentance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_3/Distance-between-points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_3/Multiplication-table-generation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/Tema_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Max_and_min.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Remote_dublicate_from_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Remove_vocale_from_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Tuple_element_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_5/Problema_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1_gradingsystem.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_Multiple_finder.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.Number_guessing_game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.Palindrome_checker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Calcul-factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Calculdobanda.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Check_nrprim.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Convert_C-F.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Inspirational_quotes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.OddvsEven.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Tema_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Tema_curs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Documents/GitHub/Inspirational-Quotes-/Proiect&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1_gradingsystem.executor": "Run",
+    "Python.2_Multiple_finder.executor": "Run",
+    "Python.3.Number_guessing_game.executor": "Run",
+    "Python.4.Palindrome_checker.executor": "Run",
+    "Python.Calcul-factorial.executor": "Run",
+    "Python.Calculdobanda.executor": "Run",
+    "Python.Check_nrprim.executor": "Run",
+    "Python.Convert_C-F.executor": "Run",
+    "Python.Inspirational_quotes.executor": "Run",
+    "Python.Max_and_min.executor": "Run",
+    "Python.OddvsEven.executor": "Run",
+    "Python.Remote_dublicate_from_list.executor": "Run",
+    "Python.Remove_vocale_from_string.executor": "Run",
+    "Python.Tema_2.executor": "Run",
+    "Python.Tema_3.executor": "Run",
+    "Python.Tema_curs.executor": "Run",
+    "Python.Tuple_element_search.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ASUS/Documents/GitHub/Inspirational-Quotes-/Proiect",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Documents\GitHub\Inspirational-Quotes-\Labs\Lab_3" />
@@ -79,7 +77,7 @@
       <recent name="C:\Users\ASUS\Documents\GitHub\Inspirational-Quotes-\Proiect" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="2_Multiple_finder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Inspirational-Quotes-" />
       <option name="ENV_FILES" value="" />
