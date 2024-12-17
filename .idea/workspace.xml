@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a4c4803-fffc-448d-a1aa-8ca139181b60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Curs/Tema_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Max_and_min.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Remote_dublicate_from_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Remove_vocale_from_string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_4/Tuple_element_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_5/Problema_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" afterDir="false" />
-    </list>
+    <list default="true" id="4a4c4803-fffc-448d-a1aa-8ca139181b60" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
