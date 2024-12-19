@@ -69,5 +69,4 @@ refresh_button.pack(pady=5)
 
 # Preluăm citate la început
 citate = get_citate()
-
 root.mainloop()
