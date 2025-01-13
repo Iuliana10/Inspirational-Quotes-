@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a4c4803-fffc-448d-a1aa-8ca139181b60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_5/unique_pair_sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_5/word_frequenecy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/Movies.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/Tema_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/Tema_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_6/Encode_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_6/Reverse_words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab_5/Problema_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab_5/inverted_index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +47,17 @@
     "Python.Calculdobanda.executor": "Run",
     "Python.Check_nrprim.executor": "Run",
     "Python.Convert_C-F.executor": "Run",
+    "Python.Encode_string.executor": "Run",
     "Python.Inspirational_quotes.executor": "Run",
     "Python.Max_and_min.executor": "Run",
     "Python.OddvsEven.executor": "Run",
     "Python.Remote_dublicate_from_list.executor": "Run",
     "Python.Remove_vocale_from_string.executor": "Run",
+    "Python.Reverse_words.executor": "Run",
     "Python.Tema_2.executor": "Run",
     "Python.Tema_3.executor": "Run",
+    "Python.Tema_4.executor": "Run",
+    "Python.Tema_5.executor": "Run",
     "Python.Tema_curs.executor": "Run",
     "Python.Tuple_element_search.executor": "Run",
     "Python.inverted_index.executor": "Run",
@@ -63,6 +69,7 @@
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/ASUS/Documents/GitHub/Inspirational-Quotes-/Proiect",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
