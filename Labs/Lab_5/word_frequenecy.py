@@ -9,5 +9,5 @@ def word_frequency(text):
     for word in words:
         frequency[word] = frequency.get(word, 0) + 1
     return frequency
-text = "Acesta este un exemplu. Acesta este doar un test!"
+text = "Acesta este un model. Acesta este doar un test!"
 print(word_frequency(text))

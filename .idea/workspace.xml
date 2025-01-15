@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a4c4803-fffc-448d-a1aa-8ca139181b60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Curs/Movies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs/Tema_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs/Tema_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_6/Encode_string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Lab_6/Reverse_words.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/data_processor_T6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Curs/people_T6.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/count_words_in_file1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/filter_lines3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Lab_7/reverse_lines2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proiect/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proiect/fundal proiect 1.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab_5/word_frequenecy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab_5/word_frequenecy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/Inspirational_quotes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,10 +64,16 @@
     "Python.Tema_3.executor": "Run",
     "Python.Tema_4.executor": "Run",
     "Python.Tema_5.executor": "Run",
+    "Python.Tema_6.executor": "Run",
     "Python.Tema_curs.executor": "Run",
     "Python.Tuple_element_search.executor": "Run",
+    "Python.count_words_in_file.executor": "Run",
+    "Python.data_processor.executor": "Run",
+    "Python.data_processor_T6.executor": "Run",
+    "Python.filter_lines.executor": "Run",
     "Python.inverted_index.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.reverse_lines.executor": "Run",
     "Python.unique_pair_sum.executor": "Run",
     "Python.word_frequenecy.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -69,7 +81,7 @@
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/ASUS/Documents/GitHub/Inspirational-Quotes-/Proiect",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -251,6 +263,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
