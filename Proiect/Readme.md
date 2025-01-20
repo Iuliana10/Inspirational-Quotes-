@@ -6,20 +6,20 @@ Site-ul: https://citate.top/categorii/inspirationale/
 
 #Caracteristici
 
-- Afișează citate inspiraționale aleatorii.
+- Afișează citate inspiraționale aleatorii și treptat
 - Permite reîncărcarea și obținerea de citate noi.
 - Ține evidența citatelor afișate anterior.
 - Utilizează o imagine personalizată ca fundal pentru interfața grafică.
 ---
 #Cerinte
 
-Pentru a rula acest proiect, ai nevoie de următoarele biblioteci:
+Pentru a rula acest proiect, am nevoie de următoarele biblioteci:
 - requests: Pentru obținerea datelor de pe internet.
 - bs4 (BeautifulSoup): Pentru parsarea HTML. 
 - tkinter: Pentru crearea interfeței grafice. 
 - PIL (Pillow): Pentru manipularea imaginilor.
 
-Instalează bibliotecile necesare folosind comanda: pip install requests beautifulsoup4 pillow.
+Am instalat bibliotecile necesare folosind comanda: pip install requests beautifulsoup4 pillow.
 
 ---
 #Cum se ruleaza
@@ -32,6 +32,7 @@ Instalează bibliotecile necesare folosind comanda: pip install requests beautif
 
 - get_citate(): Obține citate inspiraționale de pe site-ul citate.top. Dacă cererea nu reușește, afișează o casetă de eroare. 
 - show_random_citat(): Afișează un citat aleatoriu din lista obținută, îl elimină din citatele disponibile și îl adaugă în lista citatelor utilizate. Actualizează eticheta cu citate folosite folosind text împărțit pe linii. 
+- show_citat_slowly
 - wrap_text(text, line_length=80): Împarte citatele lungi în mai multe linii pentru a se încadra în fereastră. 
 - refresh_citate(): Reîncarcă citatele de pe site și golește lista citatelor utilizate.
 ---

@@ -6,7 +6,7 @@ from tkinter import messagebox
 import random
 from PIL import Image, ImageTk
 
-# Funcția pentru a obține citate
+
 def get_citate():
     url = "https://citate.top/categorii/inspirationale/"
     headers = {
@@ -23,17 +23,27 @@ def get_citate():
         messagebox.showerror("Eroare", f"Nu am putut accesa site-ul. Cod de eroare: {response.status_code}")
         return []
 
-# Funcția pentru a afișa un citat aleatoriu
+def show_citat_slowly(citat, index=0):
+    #Așează cuvintele din citat unul câte unul, cu întârzieri.
+    if index < len(citat):
+        word = citat[index] + " "
+        current_text = citat_label.cget("text")
+        citat_label.config(text=current_text + word)
+        root.after(100, show_citat_slowly, citat, index + 1)  # 100 milisecunde între cuvinte
+    else:
+        used_label.config(text="Citate folosite:\n" + "\n".join(wrap_text(c) for c in used_citate), fg="purple")
+
 def show_random_citat():
+    #Alege un citat la întâmplare și îl afișează treptat.
     if citate:
         citat = random.choice(citate)
         citate.remove(citat)
         used_citate.append(citat)
-        citat_label.config(text=citat, fg="blue", bg="lightyellow", wraplength=500)
-        used_label.config(text="Citate folosite:\n" + "\n".join(wrap_text(c) for c in used_citate), fg="purple")
+        citat_label.config(text="", fg="blue", bg="lightyellow", wraplength=500)
+        show_citat_slowly(citat.split())
 
-# Funcția pentru a împărți textul lung pe linii
 def wrap_text(text, line_length=80):
+    #Împarte un text lung în linii de o lungime specificată
     words = text.split()
     lines, current_line = [], []
     current_length = 0
@@ -49,7 +59,7 @@ def wrap_text(text, line_length=80):
         lines.append(" ".join(current_line))
     return "\n".join(lines)
 
-# Funcția pentru a reîncărca citatele
+
 def refresh_citate():
     global citate, used_citate
     citate = get_citate()
@@ -82,10 +92,10 @@ citat_label.pack(pady=20)
 button_frame = tk.Frame(frame, bg="white")
 button_frame.pack(pady=5)
 
-random_button = tk.Button(button_frame, text="Afișează un citat", command=show_random_citat, font=("Arial", 12), fg="green")
+random_button = tk.Button(button_frame, text="Afișează un citat", command=show_random_citat, font=("Arial", 13), fg="green")
 random_button.pack(side="left", padx=10)
 
-refresh_button = tk.Button(button_frame, text="Reîncarcă citatele", command=refresh_citate, font=("Arial", 12), fg="red")
+refresh_button = tk.Button(button_frame, text="Reîncarcă citatele", command=refresh_citate, font=("Arial", 13), fg="red")
 refresh_button.pack(side="right", padx=10)
 
 used_label = tk.Label(root, text="", font=("Arial", 14), justify="left", fg="purple", bg="white")
