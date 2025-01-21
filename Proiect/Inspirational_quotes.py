@@ -1,5 +1,5 @@
 # Site-ul: https://citate.top/categorii/inspirationale/
-import requests
+import requests  #trimite cereri HTTP la servere 
 from bs4 import BeautifulSoup
 import tkinter as tk
 from tkinter import messagebox
@@ -31,7 +31,7 @@ def show_citat_slowly(citat, index=0):
         citat_label.config(text=current_text + word)
         root.after(100, show_citat_slowly, citat, index + 1)  # 100 milisecunde între cuvinte
     else:
-        used_label.config(text="Citate folosite:\n" + "\n".join(wrap_text(c) for c in used_citate), fg="purple")
+        used_label.config(text= "\n".join(wrap_text(c) for c in used_citate), fg="purple", wraplength=500)
 
 def show_random_citat():
     #Alege un citat la întâmplare și îl afișează treptat.
@@ -39,10 +39,10 @@ def show_random_citat():
         citat = random.choice(citate)
         citate.remove(citat)
         used_citate.append(citat)
-        citat_label.config(text="", fg="blue", bg="lightyellow", wraplength=500)
+        citat_label.config(text="", fg="blue", bg="lightyellow", wraplength=200)
         show_citat_slowly(citat.split())
 
-def wrap_text(text, line_length=80):
+def wrap_text(text, line_length=90):
     #Împarte un text lung în linii de o lungime specificată
     words = text.split()
     lines, current_line = [], []
@@ -86,7 +86,7 @@ background_label.place(relwidth=1, relheight=1)
 frame = tk.Frame(root, bg="white")
 frame.pack(pady=20)
 
-citat_label = tk.Label(frame, text="Apasă pe buton pentru un citat!", font=("Arial", 14), wraplength=500, justify="center", fg="blue", bg="lightyellow")
+citat_label = tk.Label(frame, text="Apasă pe buton pentru un citat!", font=("Arial", 14), wraplength=200, justify="center", fg="blue", bg="lightyellow")
 citat_label.pack(pady=20)
 
 button_frame = tk.Frame(frame, bg="white")
@@ -98,7 +98,7 @@ random_button.pack(side="left", padx=10)
 refresh_button = tk.Button(button_frame, text="Reîncarcă citatele", command=refresh_citate, font=("Arial", 13), fg="red")
 refresh_button.pack(side="right", padx=10)
 
-used_label = tk.Label(root, text="", font=("Arial", 14), justify="left", fg="purple", bg="white")
+used_label = tk.Label(root, text="", font=("Arial", 18), justify="left", fg="purple", bg="lightyellow")
 used_label.pack(pady=10)
 
 citate = get_citate()

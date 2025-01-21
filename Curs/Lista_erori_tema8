@@ -1,0 +1,19 @@
+Identific erorile:
+1.Funcția fibonacci(n, memo={})
+Problema: Utilizarea unui dicționar mutabil ca argument implicit (memo={}) poate păstra valorile între apeluri, cauzând comportamente neașteptate.
+Rezolvare: Schimbați argumentul implicit la None și inițializați dicționarul în funcție.
+
+2.Funcția circle_area(radius)
+Problema: Intrarea negativă este validată corect, dar în funcția main(), radius = -5 declanșează intenționat o eroare.
+Rezolvare: Schimbați radius la o valoare pozitivă pentru testare normală.
+
+3.Funcția find_max(numbers)
+Problema: Implementarea recursivă folosește numbers[1:], care creează copii ale listei, ducând la o complexitate ridicată în memorie.
+Rezolvare: Înlocuiți recursivitatea cu o soluție iterativă pentru eficiență.
+
+4.Funcția geometric_mean(numbers)
+Problema: Dacă lista conține 0 sau numere negative, excepția este declanșată conform regulilor. Exemplul din main() conține o valoare 0.
+Rezolvare: Înlocuiți lista cu valori pozitive pentru demonstrație.
+Gestionarea excepțiilor în main()
+
+Problemă logică: Toate cazurile care declanșează erori sunt utile pentru testare, dar programul final ar trebui să folosească doar valori corecte pentru rezultate valide
