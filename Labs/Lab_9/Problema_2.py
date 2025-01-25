@@ -1,3 +1,4 @@
+#Gestionarea angajaților (Inheritance, Creating Subclasses, Overriding Methods)
 class Employee:
     def __init__(self, name, salary):
         self.name = name

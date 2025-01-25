@@ -1,3 +1,5 @@
+#1:Gestionarea conturilor bancare (Encapsulation, Instantiating, Adding Attributes and Methods)
+
 class BankAccount:
     def __init__(self, initial_balance=0):
         self._balance = initial_balance
