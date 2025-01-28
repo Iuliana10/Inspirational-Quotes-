@@ -15,7 +15,7 @@ daily_changes = np.random.normal(mean_change, std_dev_change, days) / 100
 prices = [initial_price]
 for change in daily_changes:
     prices.append(prices[-1] * (1 + change))
-prices = prices[1:]  # Eliminăm prețul inițial redundant
+prices = prices[1:]
 dates = pd.date_range(start="2024-01-01", periods=days)
 df = pd.DataFrame({
     "Data": dates,
