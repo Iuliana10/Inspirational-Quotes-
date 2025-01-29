@@ -2,10 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Setare seed pentru reproducibilitate
 np.random.seed(42)
 
-# Parametri
+
 zile = 60
 produse_min = 5
 produse_max = 15
@@ -17,7 +16,7 @@ probabilitate_promotie = 0.3
 discount_promotie = 0.2
 marja_profit = 0.3
 
-# Generare dataset
+
 date = []
 
 for zi in range(1, zile + 1):
@@ -26,16 +25,16 @@ for zi in range(1, zile + 1):
         min=1)  # Asigurăm că nu sunt prețuri negative
     cantitati = np.random.randint(cantitate_min, cantitate_max + 1, numar_produse)
 
-    # Aplicare promoții
+
     promotii = np.random.rand(numar_produse) < probabilitate_promotie
     preturi_discount = np.where(promotii, preturi * (1 - discount_promotie), preturi)
 
-    # Calcul vânzări zilnice și profit
+
     vanzari = preturi_discount * cantitati
     vanzari_totale = vanzari.sum()
     profit_total = vanzari_totale * marja_profit
 
-    # Adăugare date zilnice
+
     for produs in range(numar_produse):
         date.append({
             'Zi': zi,
@@ -47,19 +46,18 @@ for zi in range(1, zile + 1):
             'Promotie Aplicata': promotii[produs]
         })
 
-# Creare DataFrame
+
 df = pd.DataFrame(date)
 
-# Adăugare coloane suplimentare pentru analiză
+
 df['Profit'] = df['Vanzari'] * marja_profit
 
-# Statistici zilnice
 totaluri_zilnice = df.groupby('Zi').agg(
     Vanzari_Totale=('Vanzari', 'sum'),
     Profit_Total=('Profit', 'sum')
 ).reset_index()
 
-# Statistici generale
+
 statistici = {
     'Pret': {
         'Medie': df['Pret Discount'].mean(),
@@ -80,8 +78,7 @@ statistici = {
     'Profit Total': totaluri_zilnice['Profit_Total'].sum()
 }
 
-# Analiză și Vizualizare
-# 1. Evoluția veniturilor și a profitului pe zile
+
 plt.figure(figsize=(12, 6))
 plt.plot(totaluri_zilnice['Zi'], totaluri_zilnice['Vanzari_Totale'], label='Vanzari Totale', marker='o')
 plt.plot(totaluri_zilnice['Zi'], totaluri_zilnice['Profit_Total'], label='Profit Total', marker='o')
@@ -92,7 +89,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# 2. Distribuția prețurilor și a cantităților vândute
+
 plt.figure(figsize=(12, 6))
 plt.hist(df['Pret Discount'], bins=20, alpha=0.7, label='Preturi Discount', color='blue')
 plt.axvline(df['Pret Discount'].mean(), color='red', linestyle='--',
@@ -115,7 +112,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# 3. Vizualizarea promoțiilor
+
 zile_promotii = df[df['Promotie Aplicata']].groupby('Zi').agg(
     Impact_Promotie=('Pret Discount', 'mean'),
     Total_Promotii=('Promotie Aplicata', 'sum')
@@ -139,7 +136,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Rezultate
+
 print("Dataset (primele 5 randuri):")
 print(df.head())
 print("\nTotaluri Zilnice (primele 5 zile):")
